@@ -1,0 +1,61 @@
+*{
+    padding: 2px;
+    margin:2px;
+}
+body{
+    background-color: darksalmon;
+}
+main{
+    background-color: brown;
+}
+
+p{
+    text-align: center;
+    margin-top: 50px;
+    font-size: large;
+    color: crimson;
+}
+
+#button-wrapper{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+}
+
+#flex-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+input{
+    padding: 3px 50px;
+}
+
+.range{
+    display: flex;
+}
+
+#low{
+  color:lavenderblush;
+}
+
+#space{
+color: pink;
+flex:20%;
+}
+
+#high{
+color: chartreuse;
+}
+
+.attempts{
+    display: flex;
+    justify-content: space-between;
+}
+
+#gamePage{
+    display:none;
+}
