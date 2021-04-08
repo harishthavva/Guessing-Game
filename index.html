@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Numbers</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="computerFn();">
+     <marquee direction="right"><h2 style="text-align: center;">Guessing the Number between the range 1-100 !!!</h2></marquee>
+        <main id="welcomePage" style="background-color: cyan;">
+            <p>Select difficulty setting:</p>
+            <div id="button-wrapper">
+                <button onclick="easyMode();">Easy 10 attempts</button>
+                <button onclick="hardMode();">Hard 5 attempts</button>
+            </div>
+        </main>
+        <main id="gamePage" style="background-color: cornflowerblue;">
+            <section id="flex-wrapper">
+                <button id="start" onclick="welcomeMode();">New Game</button>
+                <h3 id="output">Your Guess</h3>
+                <input type="number" min="1" max="100" onchange="userAttemptsFn()" id="guess">
+                <p>Current Range</p>
+                <div class="range">
+                    <span id="low">Low</span>
+                    <span id="space">Medium</span>
+                    <span id="high">High</span>
+                </div>
+            </section>
+            <section class="attemptCount">
+                <div class="attempts">
+                    <h4>Number of Previous attempts</h4>
+                    <span id="count">0</span>
+                </div>
+            </section>
+            <section class="previousAttempt">
+                <div class="attempts">
+                    <h4>Your previous Guesses</h4>
+                    <span id="guessResult">-</span>
+                </div>
+            </section>
+        </main>
+
+        <script src='index.js'></script>
+    </body>
+</html>
